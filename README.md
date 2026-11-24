@@ -1,17 +1,15 @@
 # Intrinsic heat-kernel Gaussian processes on point clouds
 
-Code, synthetic data and numerical results accompanying *Mass-compatible heat features for certified Gaussian process inference on point clouds with reflecting boundaries*.
+**Jiaqi Xu and Tao Liu**
 
-**[Download the complete research supplement (ZIP)](https://github.com/JiaqiXu7/rbf-fd-intrinsic-heat-gp/releases/download/v1.0/rbf-fd-intrinsic-heat-gp-1.0.zip)**
+Code, synthetic data and numerical results for *Mass-compatible heat features for certified Gaussian process inference on point clouds with reflecting boundaries*.
 
-Extract the archive and open `README.md` (English) or `README_zh-CN.md` (中文). Both guides link the figures and tables of the paper to the corresponding measurements. The supplement includes the RBF-FD and heat-feature methods, the rolled-strip observations and query coordinates, likelihood and posterior error bounds, and paired timing measurements.
+**[Download the latest research supplement](https://github.com/JiaqiXu7/rbf-fd-intrinsic-heat-gp/releases/latest)**. On the release page, choose the named research ZIP under **Assets**. It contains the complete numerical methods, measurements and bilingual guides. The automatic “Source code” archives contain the repository landing page.
 
-From the extracted directory, using Python 3.13:
+Release v1.1 follows the figure and table numbers in the 20-page SIAM article and its supplementary materials. The underlying experimental measurements are the same as in v1.0.
 
-```sh
-python3 -m pip install -r requirements.txt
-python3 reproduce.py tables
-python3 reproduce.py check
-```
+After extraction, start with README.md (English) or README_zh-CN.md (中文). From the extracted directory, with Python 3.13:
 
-The table command recomputes numerical summaries from the saved measurements. The archive includes separate instructions for repeating the six spatial-state calculations, the physical posterior comparison and the shared-design likelihood experiment.
+    python3 -m pip install -r requirements.txt
+    python3 reproduce.py tables
+    python3 reproduce.py check
